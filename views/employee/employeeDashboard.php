@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -17,6 +18,7 @@
     <table class="table">
         <thead>
             <tr>
+                <th class="tg-0pky">Avatar</th>
                 <th class="tg-0pky">ID</th>
                 <th class="tg-0pky">Name</th>
                 <th class="tg-0lax">Email</th>
@@ -31,6 +33,7 @@
             <?php
             foreach ($employees as $index => $employee) {
                 echo "<tr>";
+                echo "<td class='tg-0lax'><img class='img-size' src=" . $employee["avatar"] . "></td>";
                 echo "<td class='tg-0lax'>" . $employee["id"] . "</td>";
                 echo "<td class='tg-0lax'>" . $employee["name"] . "</td>";
                 echo "<td class='tg-0lax'>" . $employee["email"] . "</td>";
